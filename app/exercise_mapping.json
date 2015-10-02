@@ -6,7 +6,12 @@
         "user": {"type" : "string"},
         "created_at": {"type" : "date"},
         "profile_image_url": {"type" : "string"},
-        "location": {"type" : "geo_point"},
+        "location": {
+          "type" : "geo_point",
+          "geohash": true,
+          "geohash_prefix": true,
+          "geohash_precision": 10
+        },
         "hashtags": {"type" : "string"}
       }
     }

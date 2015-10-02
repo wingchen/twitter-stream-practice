@@ -26,7 +26,7 @@ namespace :twitter_stream do
 
         hashtags = status.entities.hashtags.map { |h| h.text }
         payload[:hashtags] = hashtags
-        
+
         payload[:location] = status.coordinates.coordinates
 
         client.index  index: 'banjo', type: 'tweets', id: payload[:tweet_id], body: payload
