@@ -1,0 +1,4 @@
+sandbox-cookbook/.kitchen/*
+.kitchen/*
+.DS_Store
+Berksfile.lock

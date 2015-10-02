@@ -1,0 +1,13 @@
+{
+    "tweets" :{
+      "properties": {
+        "tweet_id": {"type" : "integer"},
+        "text": {"type" : "string"},
+        "user": {"type" : "string"},
+        "created_at": {"type" : "date"},
+        "profile_image_url": {"type" : "string"},
+        "location": {"type" : "geo_point"},
+        "hashtags": {"type" : "string"}
+      }
+    }
+}
